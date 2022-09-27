@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/style/nomalize.css" />
+		<link rel="stylesheet" href="./assets/style/style.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+		<link rel="manifest" href="./assets/icons/site.webmanifest">
+		<title>Password Generator</title>
+		<script
+			src="https://kit.fontawesome.com/fc8cb22272.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+			<video
+				src="./assets/video/videofullscreen.mp4"
+				type="video/mp4"
+				loop
+				muted
+				autoplay
+				preload="auto"
+			>
+				Your browser doesn't support the video tag
+			</video>
+		</div>
+		<span class="mouse" id="cursor"></span>
+		<span class="mouse" id="mouse"></span>
+		<div class="app">
+			<input
+				type="text"
+				id="password-output"
+				value="Générateur de MDP"
+				readonly
+			/>
+			<div class="copy" id="copy">
+				<i class="fa-regular fa-copy"></i>
+				<div class="copied" id="copied">Copied &#9745;</div>
+			</div>
+
+			<div class="range-container">
+				<input
+					type="range"
+					id="password-length"
+					min="4"
+					max="24"
+					value="8"
+					oninput='document.getElementById("display-password-length").value=this.value'
+				/>
+				<input type="text" id="display-password-length" value="8" readonly />
+			</div>
+
+			<div class="checkbox-container">
+				<input type="checkbox" id="lowercase" checked />
+				<label for="lowercase">a-z</label>
+				<input type="checkbox" id="uppercase" />
+				<label for="uppercase">A-Z</label>
+				<input type="checkbox" id="numbers" />
+				<label for="numbers">0-9</label>
+				<input type="checkbox" id="symbols" />
+				<label for="symbols">!-?</label>
+			</div>
+
+			<button id="generateButton">Générer mot de passe</button>
+	
+
+		<script src="./index.js"></script>
+	</body>
+</html>
