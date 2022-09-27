@@ -178,8 +178,17 @@ button:active {
 	width: 14px;
 	height: 14px;
 }
+
 #mouse {
 	height: 100px;
 	width: 100px;
 	background: white;
+}
+
+/*=============== RESPONSIVE =================*/
+
+@media screen and (max-width: 500px) {
+	body {
+		background: url(../image/mountain.jpg) center/cover;
+	}
 }
