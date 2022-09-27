@@ -39,7 +39,7 @@ const generatePassword = () => {
 		: console.log('symbols not selected');
 
 	if (data.length === 0) {
-		alert('veuillez sélectionner des critères');
+		alert('Please select at least one option');
 		return;
 	}
 
