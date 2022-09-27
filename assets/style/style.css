@@ -184,11 +184,3 @@ button:active {
 	width: 100px;
 	background: white;
 }
-
-/*=============== RESPONSIVE =================*/
-
-@media screen and (max-width: 500px) {
-	body {
-		background: url(../image/mountain.jpg) center/cover;
-	}
-}
